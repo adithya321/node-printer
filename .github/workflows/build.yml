@@ -60,11 +60,11 @@ jobs:
       - name: get-npm-version
         id: package-version
         uses: martinbeentjes/npm-get-version-action@main
-      - name: Download Posix Prebuilds
-        uses: actions/download-artifact@v4
-        with:
-          name: prebuilds-ubuntu-latest
-          path: prebuilds/
+      # - name: Download Posix Prebuilds
+      #   uses: actions/download-artifact@v4
+      #   with:
+      #     name: prebuilds-ubuntu-latest
+      #     path: prebuilds/
       - name: Download Windows Prebuilds
         uses: actions/download-artifact@v4
         with:
