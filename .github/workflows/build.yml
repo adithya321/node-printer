@@ -30,8 +30,7 @@ jobs:
       - name: Prebuild
         run: |
           npm install --ignore-scripts
-          mapfile -t node_versions <<< "$NODE_TARGET_VERSIONS"
-          for target in "${node_versions[@]}"; do
+          for target in ["22.18.0"]; do
             echo ""
             echo "------------------------------------"
             echo "Building for $target"
@@ -39,8 +38,6 @@ jobs:
             npx prebuildify -t $target --no-napi --strip
           done
         shell: bash
-        env:
-          NODE_TARGET_VERSIONS: ${{ vars.NODE_TARGET_VERSIONS }}
       - name: Upload Prebuilds
         uses: actions/upload-artifact@v4
         with:
