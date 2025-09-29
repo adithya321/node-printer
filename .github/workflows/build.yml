@@ -86,7 +86,7 @@ jobs:
             dist/*
       - name: Publish
         if: github.ref_name == 'master'
-        run: npm publish
+        run: npm publish --registry=https://npm.pkg.github.com/
         shell: bash
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

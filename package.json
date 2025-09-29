@@ -20,7 +20,7 @@
   "engines": {
     "node": ">=18.0.0 <25.0.0"
   },
-  "homepage": "https://github.com/JBHi-Fi/node-printer",
+  "homepage": "https://github.com/adithya321/node-printer",
   "licenses": [
     {
       "type": "BSD"
@@ -28,10 +28,10 @@
   ],
   "main": "./index.js",
   "typings": "./index.d.ts",
-  "name": "@jbhi-fi/printer",
+  "name": "@adithya321/node-printer",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JBHi-Fi/node-printer.git"
+    "url": "git+https://github.com/adithya321/node-printer.git"
   },
   "scripts": {
     "install": "node-gyp-build",
