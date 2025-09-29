@@ -25,7 +25,7 @@ jobs:
         shell: bash
       - uses: actions/setup-node@v4
         with:
-          node-version: ${{ vars.NODE_BUILD_VERSION }}
+          node-version: 22.18.0
           cache: "npm"
       - name: Prebuild
         run: |
@@ -53,7 +53,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: ${{ vars.NODE_BUILD_VERSION }}
+          node-version: 22.18.0
           registry-url: https://npm.pkg.github.com/
       - name: get-npm-version
         id: package-version
