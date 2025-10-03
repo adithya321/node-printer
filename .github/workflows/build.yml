@@ -26,12 +26,12 @@ jobs:
         shell: bash
       - uses: actions/setup-node@v4
         with:
-          node-version: 22.19.0
+          node-version: 22.20.0
           cache: "npm"
       - name: Prebuild
         run: |
           npm install --ignore-scripts
-          for target in 22.19.0; do
+          for target in 22.20.0; do
             echo ""
             echo "------------------------------------"
             echo "Building for $target"
@@ -54,7 +54,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 22.19.0
+          node-version: 22.20.0
           registry-url: https://npm.pkg.github.com/
           scope: "@adithya321"
       - name: get-npm-version
